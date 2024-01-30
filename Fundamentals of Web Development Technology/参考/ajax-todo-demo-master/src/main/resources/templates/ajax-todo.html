@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoList</title>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Ajax TodoList</h2>
+    <button class="btn btn-primary float-right" id="btnAdd">Add</button>
+    <table id="todoTable" class="table">
+        <thead>
+        <tr>
+            <th>Index</th>
+            <th>Content</th>
+            <th>Operations</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- 模态框 -->
+<div class="modal fade" id="modal_form">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- 模态框头部 -->
+            <div class="modal-header">
+                <h4 class="modal-title">Add Todo</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- 模态框主体 -->
+            <div class="modal-body">
+                <div class="form-body">
+                    <div class="form-group">
+                        <input name="content" placeholder="please input todo..." class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+            <!-- 模态框底部 -->
+            <div class="modal-footer">
+                <button type="button" id="btnSave" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    let cur_todo_id = '';
+    $(document).ready(
+        $("#btnAdd").click(     // “#”号是指元素的id
+            function () {
+                cur_todo_id = '';
+                $('[name="content"]').val('');      // val() - 设置或返回表单字段的值
+                $('#modal_form').modal('show'); // 显示modal
+                $('.modal-title').text('Add Todo'); // 设置title
+            }
+        ),
+        $("#btnSave").click(
+            function () {
+                let url, method;
+                if (!cur_todo_id) {
+                    url = "/todo/";
+                    method = "POST";
+                } else {
+                    url = "/todo/" + cur_todo_id;
+                    method = "PUT";
+                }
+                $.ajax({
+                    url: url,   // 规定发送请求的 URL。默认是当前页面。
+                    type: method,   // 规定请求的类型（GET 或 POST）。
+                    contentType: 'application/json',    // 发送数据到服务器时所使用的内容类型。
+                    data: JSON.stringify({"content":$('[name="content"]').val()}),  // 规定要发送到服务器的数据。
+                    success: function (result) {        // 当请求成功时运行的函数。
+                        //如果成功，隐藏弹出框并重新加载数据
+                        $('#modal_form').modal('hide');
+                        reload_table();
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {  // 如果请求失败要运行的函数。
+                        alert('新建或修改错误！');
+                    }
+                })
+            }
+        ),
+        $("#todoTable").on('click', ".btnEdit", function () {
+                cur_todo_id = $(this).data("id")
+                $('[name="content"]').val($(this).parent("td").prev().text());
+                $('#modal_form').modal('show');
+                $('.modal-title').text('Edit Todo');
+            }
+        ),
+
+        $("#todoTable").on('click', ".btnDel", function () {
+                $.ajax({
+                    url: "/todo/" + $(this).data("id"),
+                    type: "delete",
+                    success: function (data) {
+                        //如果成功，隐藏弹出框并重新加载数据
+                        $('#modal_form').modal('hide');
+                        reload_table();
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        alert('删除错误！');
+                    }
+                })
+            }
+        ),
+
+        reload_table()
+    )
+
+
+    function reload_table() {
+        $.ajax({
+            url: "/todo/",
+            type: "get",
+            dataType: "JSON",
+            success: function (data) {
+                $("#todoTable").children("tbody").empty()
+                let htmlStr = "";
+                for (let i = 0; i < data.length; i++) {
+                    htmlStr = htmlStr +
+                        `<tr>
+                            <td class='index'>${i + 1}</td>
+                            <td>${data[i].content}</td>
+                            <td>
+                                <button class='btn btn-xs btn-success btnEdit' data-id=${data[i].id}>编辑</button>
+                                <button class='btn btn-xs btn-danger btnDel' data-id=${data[i].id}>删除</button>
+                            </td>
+                        </tr>`;
+                }
+                $("#todoTable").children("tbody").html(htmlStr);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert('获取数据错误');
+            }
+        })
+    }
+
+</script>
+</body>
+</html>
