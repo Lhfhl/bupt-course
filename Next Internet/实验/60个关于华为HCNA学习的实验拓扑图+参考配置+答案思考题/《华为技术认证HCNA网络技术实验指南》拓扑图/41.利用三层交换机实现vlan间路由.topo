@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo>
+    <devices>
+        <dev id="A8E915B6-DC06-4d4c-8FEF-BA8EE628625F" name="PC-1" model="Laptop" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-CF-A6-16  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 :: " com_port="0" bootmode="1" cx="273.500000" cy="373.000000" edit_left="300" edit_top="427">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="15FCAFCE-E211-40fb-ACBE-8A47BCF276D4" name="PC-2" model="Laptop" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-CF-18-6B  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 :: " com_port="0" bootmode="1" cx="373.500000" cy="373.000000" edit_left="400" edit_top="427">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="FC705110-DB60-4fb5-AA84-DF984F7AB4D4" name="PC-3" model="Laptop" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-CF-27-13  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 :: " com_port="0" bootmode="1" cx="573.500000" cy="373.000000" edit_left="600" edit_top="427">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="723C0049-06B8-4f43-802D-B5AACF2D0F62" name="S1" model="S5700" settings="" com_port="2000" bootmode="1" cx="473.000000" cy="173.000000" edit_left="536" edit_top="194">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="A8E915B6-DC06-4d4c-8FEF-BA8EE628625F" destDeviceID="723C0049-06B8-4f43-802D-B5AACF2D0F62">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="330.040253" srcBoundRect_Y="369.959747" srcOffset_X="-77.000000" srcOffset_Y="-21.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="469.464478" tarBoundRect_Y="230.535538" tarOffset_X="-63.000000" tarOffset_Y="-10.000000" />
+        </line>
+        <line srcDeviceID="15FCAFCE-E211-40fb-ACBE-8A47BCF276D4" destDeviceID="723C0049-06B8-4f43-802D-B5AACF2D0F62">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="418.999115" srcBoundRect_Y="362.001770" srcOffset_X="9.000000" srcOffset_Y="-3.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="480.687622" tarBoundRect_Y="238.624741" tarOffset_X="-7.000000" tarOffset_Y="14.000000" />
+        </line>
+        <line srcDeviceID="723C0049-06B8-4f43-802D-B5AACF2D0F62" destDeviceID="FC705110-DB60-4fb5-AA84-DF984F7AB4D4">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="519.312378" srcBoundRect_Y="238.624741" srcOffset_X="16.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="581.000854" tarBoundRect_Y="362.001770" tarOffset_X="12.000000" tarOffset_Y="-3.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="455" top="152" right="526" bottom="167" content="核心交换机" fontname="Consolas" fontstyle="0" editsize="90" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="321" top="453" right="372" bottom="482" content="销售部&#x0D;&#x0A;VLAN 10" fontname="Consolas" fontstyle="0" editsize="90" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="574" top="451" right="625" bottom="480" content="客服部&#x0D;&#x0A;VLAN 20" fontname="Consolas" fontstyle="0" editsize="90" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

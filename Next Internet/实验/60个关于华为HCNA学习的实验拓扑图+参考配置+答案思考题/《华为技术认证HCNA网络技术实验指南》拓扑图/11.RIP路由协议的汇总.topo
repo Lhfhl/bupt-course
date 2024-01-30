@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo>
+    <devices>
+        <dev id="8988CB74-ECA5-4917-97B9-BC7270070227" name="R1" model="AR1220" settings="" com_port="2000" bootmode="0" cx="173.000000" cy="173.000000" edit_left="200" edit_top="227">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+        <dev id="332372AD-59C0-4089-8546-F0648ED88E02" name="R2" model="AR1220" settings="" com_port="2001" bootmode="0" cx="373.000000" cy="173.000000" edit_left="400" edit_top="227">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+        <dev id="A109D3FD-BC04-4a38-BDB3-13B0C909DC58" name="R3" model="AR1220" settings="" com_port="2002" bootmode="0" cx="573.000000" cy="173.000000" edit_left="600" edit_top="227">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Ethernet" interfacename="Ethernet" count="8" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="8988CB74-ECA5-4917-97B9-BC7270070227" destDeviceID="332372AD-59C0-4089-8546-F0648ED88E02">
+            <interfacePair lineName="Serial" srcIndex="10" srcBoundRectIsMoved="1" srcBoundRect_X="243.183762" srcBoundRect_Y="200.000000" srcOffset_X="-13.000000" srcOffset_Y="-15.000000" tarIndex="11" tarBoundRectIsMoved="1" tarBoundRect_X="356.816223" tarBoundRect_Y="200.000000" tarOffset_X="-39.000000" tarOffset_Y="1.000000" />
+        </line>
+        <line srcDeviceID="332372AD-59C0-4089-8546-F0648ED88E02" destDeviceID="A109D3FD-BC04-4a38-BDB3-13B0C909DC58">
+            <interfacePair lineName="Serial" srcIndex="10" srcBoundRectIsMoved="1" srcBoundRect_X="443.183777" srcBoundRect_Y="200.000000" srcOffset_X="-19.000000" srcOffset_Y="-14.000000" tarIndex="11" tarBoundRectIsMoved="1" tarBoundRect_X="556.816223" tarBoundRect_Y="200.000000" tarOffset_X="-43.000000" tarOffset_Y="1.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="240" top="162" right="357" bottom="179" content="192.168.12.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="445" top="162" right="562" bottom="179" content="192.168.23.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="509" top="246" right="679" bottom="310" content="loopback 0: 3.3.0.3/24&#x0D;&#x0A;loopback 1: 3.3.1.3/24&#x0D;&#x0A;loopback 2: 3.3.2.3/24&#x0D;&#x0A;loopback 3: 3.3.3.3/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

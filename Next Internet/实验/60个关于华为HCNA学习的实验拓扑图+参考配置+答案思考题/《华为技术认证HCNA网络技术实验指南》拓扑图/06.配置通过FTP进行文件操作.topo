@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo>
+    <devices>
+        <dev id="AEA96AFB-9A03-4940-857D-B53A2A6955F8" name="S1" model="S5700" settings="" com_port="2005" bootmode="0" cx="473.000000" cy="173.000000" edit_left="502" edit_top="154">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="41243407-1A44-4ddb-BCC1-4B2AE215C8DD" name="R1" model="AR2220" settings="" com_port="2006" bootmode="0" cx="673.000000" cy="173.000000" edit_left="700" edit_top="155">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="55C8E66D-B1AB-4d3c-83CE-5018E2762370" name="PC-1" model="Client" settings="-domain 0 -eth 54-89-98-CF-AE-68 -ipaddr 10.0.1.1 -ipmask 255.255.255.0 -gateway 10.0.1.254 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 3.3.3.2 -ipv6dns 3000::1" com_port="0" bootmode="0" cx="473.000000" cy="373.000000" edit_left="500" edit_top="426">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="BAC2CB42-5AAC-40aa-B2A7-E0C49833D3D0" name="FTP Server" model="Server" settings="-domain 0 -eth 54-89-98-CF-2D-6E -ipaddr 10.0.2.1 -ipmask 255.255.255.0 -gateway 10.0.2.254 -ipv6addr 2000::2 -ipv6gateway 2000::1 -prefixlen 64 -ipv4dns 3.3.3.2 -ipv6dns 3000::1" com_port="0" bootmode="0" cx="673.000000" cy="373.000000" edit_left="700" edit_top="427">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="55C8E66D-B1AB-4d3c-83CE-5018E2762370" destDeviceID="AEA96AFB-9A03-4940-857D-B53A2A6955F8">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="500.000000" srcBoundRect_Y="356.816223" srcOffset_X="-82.000000" srcOffset_Y="1.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="500.000000" tarBoundRect_Y="243.183762" tarOffset_X="-52.000000" tarOffset_Y="-3.000000" />
+        </line>
+        <line srcDeviceID="AEA96AFB-9A03-4940-857D-B53A2A6955F8" destDeviceID="41243407-1A44-4ddb-BCC1-4B2AE215C8DD">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="543.183777" srcBoundRect_Y="200.000000" srcOffset_X="-20.000000" srcOffset_Y="7.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="656.816223" tarBoundRect_Y="200.000000" tarOffset_X="-36.000000" tarOffset_Y="-19.000000" />
+        </line>
+        <line srcDeviceID="41243407-1A44-4ddb-BCC1-4B2AE215C8DD" destDeviceID="BAC2CB42-5AAC-40aa-B2A7-E0C49833D3D0">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="700.000000" srcBoundRect_Y="243.183762" srcOffset_X="7.000000" srcOffset_Y="-2.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="700.000000" tarBoundRect_Y="356.816223" tarOffset_X="9.000000" tarOffset_Y="2.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="425" top="339" right="489" bottom="356" content="10.0.1.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="711" top="339" right="775" bottom="356" content="10.0.2.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="597" top="163" right="676" bottom="180" content="10.0.1.254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="705" top="254" right="784" bottom="271" content="10.0.2.254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

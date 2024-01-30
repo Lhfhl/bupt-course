@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo>
+    <devices>
+        <dev id="270BA852-EB2B-4351-8862-847032D3AD45" name="S1" model="S3700" settings="" com_port="2000" bootmode="1" cx="373.000000" cy="173.000000" edit_left="368" edit_top="177">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="0FB0D18F-DF03-44e0-866C-43945EDB8B33" name="R2" model="AR2220" settings="" com_port="2002" bootmode="1" cx="373.000000" cy="73.000000" edit_left="440" edit_top="89">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="CDB58F48-855E-43f4-9846-1D8E465C337B" name="R3" model="AR2220" settings="" com_port="2003" bootmode="1" cx="173.000000" cy="173.000000" edit_left="200" edit_top="227">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="8A72B12D-692D-4a78-B9BB-898CADEC10C5" name="R4" model="AR2220" settings="" com_port="2004" bootmode="1" cx="373.000000" cy="273.000000" edit_left="401" edit_top="324">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="E32E42CF-A0E7-4792-A13A-402B16FA8A1A" name="R1" model="AR2220" settings="" com_port="2001" bootmode="1" cx="573.000000" cy="173.000000" edit_left="600" edit_top="227">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="270BA852-EB2B-4351-8862-847032D3AD45" destDeviceID="E32E42CF-A0E7-4792-A13A-402B16FA8A1A">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="443.183777" srcBoundRect_Y="200.000000" srcOffset_X="-19.000000" srcOffset_Y="-13.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="556.816223" tarBoundRect_Y="200.000000" tarOffset_X="-27.000000" tarOffset_Y="2.000000" />
+        </line>
+        <line srcDeviceID="270BA852-EB2B-4351-8862-847032D3AD45" destDeviceID="0FB0D18F-DF03-44e0-866C-43945EDB8B33">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="400.000000" srcBoundRect_Y="156.816238" srcOffset_X="-76.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="400.000000" tarBoundRect_Y="143.183762" tarOffset_X="-51.000000" tarOffset_Y="-15.000000" />
+        </line>
+        <line srcDeviceID="270BA852-EB2B-4351-8862-847032D3AD45" destDeviceID="CDB58F48-855E-43f4-9846-1D8E465C337B">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="356.816223" srcBoundRect_Y="200.000000" srcOffset_X="-56.000000" srcOffset_Y="5.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="243.183762" tarBoundRect_Y="200.000000" tarOffset_X="-20.000000" tarOffset_Y="-16.000000" />
+        </line>
+        <line srcDeviceID="270BA852-EB2B-4351-8862-847032D3AD45" destDeviceID="8A72B12D-692D-4a78-B9BB-898CADEC10C5">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="400.000000" srcBoundRect_Y="243.183762" srcOffset_X="3.000000" srcOffset_Y="-9.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="400.000000" tarBoundRect_Y="256.816223" tarOffset_X="4.000000" tarOffset_Y="6.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="503" top="221" right="574" bottom="236" content="172.16.1.1" fontname="Consolas" fontstyle="0" editsize="90" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="298" top="100" right="369" bottom="115" content="172.16.1.2" fontname="Consolas" fontstyle="0" editsize="90" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="224" top="165" right="295" bottom="180" content="172.16.1.3" fontname="Consolas" fontstyle="0" editsize="90" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="426" top="282" right="497" bottom="297" content="172.16.1.4" fontname="Consolas" fontstyle="0" editsize="90" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="564" top="252" right="649" bottom="267" content="总经理办公室" fontname="Consolas" fontstyle="0" editsize="90" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="376" top="51" right="420" bottom="66" content="人事部" fontname="Consolas" fontstyle="0" editsize="90" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="178" top="247" right="222" bottom="262" content="开发部" fontname="Consolas" fontstyle="0" editsize="90" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="380" top="348" right="424" bottom="363" content="市场部" fontname="Consolas" fontstyle="0" editsize="90" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+    </txttips>
+</topo>

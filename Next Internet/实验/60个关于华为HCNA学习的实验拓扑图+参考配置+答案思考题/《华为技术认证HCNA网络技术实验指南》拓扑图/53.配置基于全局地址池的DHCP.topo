@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo>
+    <devices>
+        <dev id="CF14AD76-B0C6-487d-BE12-A31137999237" name="S1" model="S3700" settings="" com_port="2001" bootmode="0" cx="251.000000" cy="193.000000" edit_left="239" edit_top="212">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="80FF2935-8E5E-40cf-970C-17D4F5654AA9" name="S2" model="S3700" settings="" com_port="2002" bootmode="0" cx="496.000000" cy="191.000000" edit_left="562" edit_top="211">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="8D422026-29C7-41ce-B881-3AADCBB702E8" name="PC-2" model="Laptop" settings=" -simpc_ip 192.168.2.253  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.2.254  -simpc_mac 54-89-98-CF-BC-44  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 8.8.8.8  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 :: " com_port="0" bootmode="0" cx="498.500000" cy="319.000000" edit_left="525" edit_top="373">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="DF37D7E1-7E7B-41a4-BF85-6696082F65D6" name="R1" model="AR2220" settings="" com_port="2000" bootmode="0" cx="372.000000" cy="73.000000" edit_left="402" edit_top="128">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="519ED67C-7AC2-4ed7-9108-D5132B64357E" name="PC-1" model="Laptop" settings=" -simpc_ip 192.168.1.249  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.1.254  -simpc_mac 54-89-98-CF-2F-69  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 8.8.8.8  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 :: " com_port="0" bootmode="0" cx="250.500000" cy="322.000000" edit_left="277" edit_top="376">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="DF37D7E1-7E7B-41a4-BF85-6696082F65D6" destDeviceID="CF14AD76-B0C6-487d-BE12-A31137999237">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="368.338013" srcBoundRect_Y="130.408569" srcOffset_X="-59.000000" srcOffset_Y="-2.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="308.661987" tarBoundRect_Y="189.591431" tarOffset_X="-82.000000" tarOffset_Y="-5.000000" />
+        </line>
+        <line srcDeviceID="DF37D7E1-7E7B-41a4-BF85-6696082F65D6" destDeviceID="80FF2935-8E5E-40cf-970C-17D4F5654AA9">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="430.282990" srcBoundRect_Y="129.769302" srcOffset_X="10.000000" srcOffset_Y="-3.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="491.717010" tarBoundRect_Y="188.230698" tarOffset_X="14.000000" tarOffset_Y="-5.000000" />
+        </line>
+        <line srcDeviceID="80FF2935-8E5E-40cf-970C-17D4F5654AA9" destDeviceID="8D422026-29C7-41ce-B881-3AADCBB702E8">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="523.674683" srcBoundRect_Y="261.178497" srcOffset_X="9.000000" srcOffset_Y="-4.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="524.336304" tarBoundRect_Y="303.521851" tarOffset_X="10.000000" tarOffset_Y="-9.000000" />
+        </line>
+        <line srcDeviceID="CF14AD76-B0C6-487d-BE12-A31137999237" destDeviceID="519ED67C-7AC2-4ed7-9108-D5132B64357E">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="277.665253" srcBoundRect_Y="263.182465" srcOffset_X="-79.000000" srcOffset_Y="-2.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="277.329315" tarBoundRect_Y="306.517944" tarOffset_X="-75.000000" tarOffset_Y="-1.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="196" top="395" right="359" bottom="412" content="市场部 192.168.1.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="447" top="394" right="610" bottom="411" content="财务部 192.168.2.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="352" top="50" right="439" bottom="67" content="DHCP server" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

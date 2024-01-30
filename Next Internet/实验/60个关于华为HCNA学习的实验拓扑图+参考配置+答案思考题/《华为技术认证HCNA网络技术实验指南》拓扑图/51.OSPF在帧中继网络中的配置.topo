@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo>
+    <devices>
+        <dev id="654F5734-7324-45f5-B44B-A8B14D330D41" name="FRSW1" model="FRSW" settings="0-102-1-201;0-103-2-301;" com_port="0" bootmode="0" cx="373.000000" cy="273.000000" edit_left="400" edit_top="327">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Serial" interfacename="Serial" count="16" />
+            </slot>
+        </dev>
+        <dev id="8595C0D0-B272-42d1-A798-113B423DBE0C" name="R2" model="AR2220" settings="" com_port="2001" bootmode="0" cx="173.000000" cy="373.000000" edit_left="201" edit_top="427">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+        <dev id="D62DB8C1-6057-4c41-8529-79B63F00AA76" name="R3" model="AR2220" settings="" com_port="2002" bootmode="0" cx="573.000000" cy="373.000000" edit_left="600" edit_top="427">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+        <dev id="92C2B33B-CA90-44a0-827B-C9F0086C8A6E" name="R1" model="AR2220" settings="" com_port="2000" bootmode="0" cx="373.000000" cy="123.000000" edit_left="401" edit_top="101">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="92C2B33B-CA90-44a0-827B-C9F0086C8A6E" destDeviceID="654F5734-7324-45f5-B44B-A8B14D330D41">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="400.000000" srcBoundRect_Y="193.183762" srcOffset_X="6.000000" srcOffset_Y="2.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="400.000000" tarBoundRect_Y="256.816223" tarOffset_X="6.000000" tarOffset_Y="-5.000000" />
+        </line>
+        <line srcDeviceID="8595C0D0-B272-42d1-A798-113B423DBE0C" destDeviceID="654F5734-7324-45f5-B44B-A8B14D330D41">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="238.624741" srcBoundRect_Y="380.687622" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="361.375275" tarBoundRect_Y="319.312378" tarOffset_X="-54.000000" tarOffset_Y="-15.000000" />
+        </line>
+        <line srcDeviceID="654F5734-7324-45f5-B44B-A8B14D330D41" destDeviceID="D62DB8C1-6057-4c41-8529-79B63F00AA76">
+            <interfacePair lineName="Serial" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="438.624725" srcBoundRect_Y="319.312378" srcOffset_X="0.000000" srcOffset_Y="-15.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="561.375244" tarBoundRect_Y="380.687622" tarOffset_X="-57.000000" tarOffset_Y="6.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="348" top="355" right="450" bottom="372" content="10.0.123.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="316" top="219" right="380" bottom="236" content="DLCI 102" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="439" top="219" right="503" bottom="236" content="DLCI 103" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="225" top="327" right="289" bottom="344" content="DLCI 201" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="506" top="327" right="570" bottom="344" content="DLCI 301" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

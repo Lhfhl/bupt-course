@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo>
+    <devices>
+        <dev id="9110BB84-EDE7-426a-971A-668C3AFB9FC8" name="PC-2" model="Laptop" settings=" -simpc_ip 10.0.1.2  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-CF-BE-42  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 :: " com_port="0" bootmode="0" cx="489.500000" cy="539.000000" edit_left="516" edit_top="593">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="B45C6425-4054-4f68-910A-9B0C23B0410D" name="S1" model="S5700" settings="" com_port="2000" bootmode="0" cx="167.000000" cy="330.000000" edit_left="193" edit_top="310">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="9E46A321-2248-40af-A181-0F61C18B6747" name="S2" model="S5700" settings="" com_port="2001" bootmode="0" cx="423.000000" cy="329.000000" edit_left="454" edit_top="309">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="47A29DD7-1B6D-440f-AC04-254E75309BA9" name="PC-1" model="Laptop" settings=" -simpc_ip 10.0.1.1  -simpc_mask 255.255.255.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-CF-5D-55  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 :: " com_port="0" bootmode="0" cx="98.500000" cy="539.000000" edit_left="125" edit_top="593">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="B45C6425-4054-4f68-910A-9B0C23B0410D" destDeviceID="9E46A321-2248-40af-A181-0F61C18B6747">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="237.183441" srcBoundRect_Y="356.831329" srcOffset_X="-11.000000" srcOffset_Y="-24.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="406.816559" tarBoundRect_Y="356.168671" tarOffset_X="-32.000000" tarOffset_Y="-24.000000" />
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="245.183441" srcBoundRect_Y="364.831329" srcOffset_X="-19.000000" srcOffset_Y="4.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="414.816559" tarBoundRect_Y="364.168671" tarOffset_X="-40.000000" tarOffset_Y="4.000000" />
+            <interfacePair lineName="Copper" srcIndex="4" srcBoundRectIsMoved="1" srcBoundRect_X="229.183441" srcBoundRect_Y="348.831329" srcOffset_X="-3.000000" srcOffset_Y="35.000000" tarIndex="4" tarBoundRectIsMoved="1" tarBoundRect_X="398.816559" tarBoundRect_Y="348.168671" tarOffset_X="-23.000000" tarOffset_Y="31.000000" />
+        </line>
+        <line srcDeviceID="47A29DD7-1B6D-440f-AC04-254E75309BA9" destDeviceID="B45C6425-4054-4f68-910A-9B0C23B0410D">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="138.318542" srcBoundRect_Y="525.658325" srcOffset_X="-81.000000" srcOffset_Y="-1.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="180.461868" tarBoundRect_Y="398.006775" tarOffset_X="-56.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="9110BB84-EDE7-426a-971A-668C3AFB9FC8" destDeviceID="9E46A321-2248-40af-A181-0F61C18B6747">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="503.262360" srcBoundRect_Y="525.471191" srcOffset_X="14.000000" srcOffset_Y="-3.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="462.947632" tarBoundRect_Y="397.197052" tarOffset_X="10.000000" tarOffset_Y="-3.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="96" top="609" right="160" bottom="626" content="10.0.1.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="485" top="607" right="549" bottom="624" content="10.0.1.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

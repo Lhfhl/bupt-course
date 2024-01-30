@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo>
+    <devices>
+        <dev id="A7AAA467-1C3F-4613-BF29-C4BEA0E85690" name="R1" model="AR2220" settings="" com_port="2000" bootmode="1" cx="372.000000" cy="232.000000" edit_left="402" edit_top="283">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines />
+    <shapes />
+    <txttips />
+</topo>

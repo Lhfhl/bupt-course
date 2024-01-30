@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo>
+    <devices>
+        <dev id="AF860682-ABE7-4436-844E-26A8CEAEA263" name="S1" model="S3700" settings="" com_port="2000" bootmode="1" cx="373.000000" cy="273.000000" edit_left="400" edit_top="327">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="22" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="B93CEA33-24DB-41ac-B9C1-CFCF3BB57E75" name="Agent" model="AR2220" settings="" com_port="2001" bootmode="1" cx="573.000000" cy="273.000000" edit_left="600" edit_top="327">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="04EE89F1-1BF0-4142-817F-901CFC1CA9E1" name="NMS-1" model="Laptop" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-CF-7C-3E  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 :: " com_port="0" bootmode="1" cx="173.500000" cy="173.000000" edit_left="200" edit_top="227">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="AAD15D1C-E9A2-4361-8620-BE366EF15AE9" name="NMS-2" model="Laptop" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-CF-0E-4F  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 :: " com_port="0" bootmode="1" cx="173.500000" cy="373.000000" edit_left="200" edit_top="427">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="AF860682-ABE7-4436-844E-26A8CEAEA263" destDeviceID="B93CEA33-24DB-41ac-B9C1-CFCF3BB57E75">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="443.183777" srcBoundRect_Y="300.000000" srcOffset_X="-18.000000" srcOffset_Y="-16.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="556.816223" tarBoundRect_Y="300.000000" tarOffset_X="-28.000000" tarOffset_Y="3.000000" />
+        </line>
+        <line srcDeviceID="04EE89F1-1BF0-4142-817F-901CFC1CA9E1" destDeviceID="AF860682-ABE7-4436-844E-26A8CEAEA263">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="237.998245" srcBoundRect_Y="218.999115" srcOffset_X="-1.000000" srcOffset_Y="-17.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="361.375275" tarBoundRect_Y="280.687622" tarOffset_X="-74.000000" tarOffset_Y="-1.000000" />
+        </line>
+        <line srcDeviceID="AAD15D1C-E9A2-4361-8620-BE366EF15AE9" destDeviceID="AF860682-ABE7-4436-844E-26A8CEAEA263">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="237.998245" srcBoundRect_Y="381.000885" srcOffset_X="0.000000" srcOffset_Y="1.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="361.375275" tarBoundRect_Y="319.312378" tarOffset_X="-74.000000" tarOffset_Y="-14.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="166" top="249" right="230" bottom="266" content="10.1.1.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="167" top="451" right="231" bottom="468" content="10.1.1.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="493" top="325" right="572" bottom="342" content="10.1.1.254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
