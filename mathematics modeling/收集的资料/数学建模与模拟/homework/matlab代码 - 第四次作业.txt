@@ -1,0 +1,17 @@
+f=inline('b*x*(1-x)');
+x=zeros(1300,101);
+k=1;
+for b=2.500:0.010:3.500
+       x(1,k)=b;
+       x(2,k)=0.200;
+       for i=3:1300
+           x(i,k)=f(b,x(i-1,k));
+           if i>1290
+              plot(b,x(i,k),'b.');
+              hold on;
+           end;
+       end;
+       k=k+1;
+end;
+hold off;
+xlabel('b');ylabel('x*');
