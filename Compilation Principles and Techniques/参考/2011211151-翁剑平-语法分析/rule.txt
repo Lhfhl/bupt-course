@@ -1,0 +1,4 @@
+E E+T E-T T -1
+T T*F T/F F -1
+F (E) num -1
+-1

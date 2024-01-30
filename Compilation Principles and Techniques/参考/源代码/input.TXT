@@ -1,0 +1,15 @@
+3 4 11
+a b c
+S A B C
+S->A
+S->B
+S->c C
+A->S c
+A->a B
+A->a C
+B->b A
+B->b S 
+B->#
+C->c
+C->#
+S
