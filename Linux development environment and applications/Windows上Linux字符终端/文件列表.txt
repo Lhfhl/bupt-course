@@ -1,0 +1,3 @@
+PuTTY  开源的轻量级Windows上虚拟字符终端软件，通过这个终端软件登录到你的Linux
+WinSCP 图形化的远端文件系统管理软件，在Linux和Windows之间交换文件
+SecureCRT 功能与PuTTY类似，功能更多一点
