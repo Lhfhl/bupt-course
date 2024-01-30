@@ -1,0 +1,22 @@
+000.000 =============================================================
+000.000                     Station A                               
+000.000 -------------------------------------------------------------
+000.000 Protocol.lib, version 4.0, jiangyanjun0718@bupt.edu.cn
+000.000 Channel: 8000 bps, 270 ms propagation delay, bit error rate 1.0E-05
+000.000 Log file "datalink-A.log", TCP port 59144, debug mask 0x00
+000.000 Station A is waiting for station B on TCP port 59144 ... Done.
+000.852 New epoch: Wed May  1 18:38:17 2019
+000.852 =================================================================
+000.853 
+000.853 Designed by Chenbin, Luoyang and Liyiyang. Build: May  1 2019  16:32:16
+004.891 .... 2 packets received, 1141 bps, 14.27%, Err 1 (1.5e-04)
+007.333 .... 5 packets received, 1698 bps, 21.22%, Err 1 (7.6e-05)
+009.767 .... 8 packets received, 1935 bps, 24.19%, Err 1 (5.1e-05)
+012.236 .... 11 packets received, 2060 bps, 25.75%, Err 1 (3.8e-05)
+014.713 .... 14 packets received, 2138 bps, 26.72%, Err 1 (3.1e-05)
+017.194 .... 17 packets received, 2191 bps, 27.38%, Err 1 (2.6e-05)
+019.662 .... 20 packets received, 2231 bps, 27.89%, Err 1 (2.2e-05)
+022.145 .... 23 packets received, 2260 bps, 28.25%, Err 1 (1.9e-05)
+024.600 .... 26 packets received, 2286 bps, 28.57%, Err 1 (1.7e-05)
+027.059 .... 29 packets received, 2306 bps, 28.82%, Err 1 (1.5e-05)
+029.544 .... 32 packets received, 2321 bps, 29.01%, Err 1 (1.4e-05)
