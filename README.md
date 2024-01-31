@@ -34,6 +34,10 @@
 
 注：
 课程的必修/选修是对应2020级计院的网络工程专业。
+有些文档是自己总结的，仅供参考。
 
-### 其他的资源
+### 其他收集的资源链接
 [北京邮电大学计算机学院本科编程作业参考索引](https://github.com/brupst/awesome-bupt-scs)
+课程资料：[Cowboy-Spike-Spiegel/BUPT_SCS_Resources](https://github.com/Cowboy-Spike-Spiegel/BUPT_SCS_Resources)
+[巴普特（北京邮电大学）计院（计算机学院）选修课指北](https://github.com/oneliey/BUPT-SCS-Courses?tab=readme-ov-file)
+课程总结和课程笔记[xqmmcqs's blog](https://blog.xqmmcqs.com)
